@@ -1,0 +1,339 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ddd;
+  /*background-image: linear-gradient(to bottom, white, white, white, #333);*/
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* This is for the design of the nav bar*/
+.nav {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav li a {
+  color: #333;
+  text-decoration: none;
+    float: left;
+    padding: 11px;
+    cursor: pointer;
+}
+
+/* this gives all the tabs a width together */
+.nav .sub {
+  width: 300px;
+  height: 40px;
+  float: right;
+  list-style-type: none;
+}
+/* this next part gives the individual tabs */
+/*.nav .sub li {
+  float: left;
+  padding: 11px;
+  cursor: pointer;
+}*/
+
+.nav .sub li a:hover {
+  color: #8733ff;
+}
+
+.brand {
+  font-size: 20px;
+  width: 50%;
+  height: 20px;
+  text-align: justify;
+  padding-top: 7px;
+  padding-left: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font {
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.purpbg {
+  width: 100%;
+  height: 150px;
+  background-color: #8733ff;
+  margin-top: 13px;
+  z-index: -999;
+  background-image: url(nat.jpg);
+  box-shadow:         inset 0 0 10px #000000;
+}
+
+.circlogo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-image: url(Logo1.png);
+  margin: 0 auto;
+  margin-top: -380px;
+  z-index: 999;
+  //*box-shadow: -1px 3px 10px black;*//
+}
+
+.both {
+  width: 100%;
+  height: 500px;
+  margin-top: 0px;
+  background-color: #333;
+}
+
+.welcome {
+  padding-top: 200px;
+  text-align: center;
+  color: #8733ff;
+  text-decoration: underline;
+}
+
+.sub1 {
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.sneak {
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  margin-top: 600px;
+  box-shadow:         inset 0 0 15px #000000
+}
+
+.sneakT {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  height: 30px;
+  padding-top: 20px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.boxes {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  margin-top: 40px;
+}
+
+.box1 {
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 2px;
+  background-color: #333;
+  margin: auto;
+  cursor: pointer;
+}
+
+
+.box2 {
+  width: 250px;
+  height: 250px;
+  border-radius: 2px;
+  background-color: #333;
+  margin: auto;
+}
+.box3 {
+  width: 250px;
+  height: 250px;
+  border-radius: 2px;
+  background-color: #333;
+  margin: auto;
+}
+/*here starts the product page css
+.container {
+  width: 100%;
+  height: 900px;
+  background-color: #333;
+  margin-top: 10px;
+  display: flex;
+}
+*/
+/**/
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #CCC;
+  width: 100%;
+}
+
+.object {
+  background-color: white;
+  border: 1px solid red;
+  text-align: center;
+  padding: 40px;
+}
+
+.objt {
+font-size: 40px;
+}
+
+.objtext {
+  font-size: 10px;
+  width: 100%;
+  height: 20px;
+  background-color: red;
+}
+
+/*footer design such as who made the site*/
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+}
+
+.designer {
+font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+
+footer a {
+  color: #8733ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*this is for the image js*/
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* THE MODAL (background)*/
+.modal {
+  display: none; /* hidden by default*/
+  position: fixed; /* stay in place*/
+  z-index: 1; /* stay on top*/
+  padding-top: 100px;/*Location of the box*/
+  left: 0;
+  top: 0;
+  width: 100%;/* full width*/
+  height: 100%;/* full height*/
+  overflow: auto;/* enable scroll if needed*/
+  background-color: rgb(0,0,0);/* fallback color*/
+  background-color: rgba(0,0,0,0.9);/* black w/opacity*/
+}
+
+/* Modal content (image)*/
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+
+/* Caption of Modal Image*/
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation*/
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0,6s;
+}
+
+@keyframes zoom {
+  from{transform: scale(0);}
+  to{transform: scale(1);}
+}
+
+/*The Close Button*/
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px;){
+  .modal-content {
+    width: 100%;
+  }
+}

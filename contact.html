@@ -1,0 +1,59 @@
+<html>
+<head>
+  <link href="style.css" rel="stylesheet">
+  <!--- this links the fonts that we can use onto the website and for every device to use it --->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald|Roboto" rel="stylesheet">
+  <title>Home</title></head>
+<body>
+<!--- This is where the heading starts or the Navigation at the top of the site --->
+<div class="nav">
+  <ul class="sub">
+    <!--- These are the individual tabs at the top--->
+    <li><a href="index.html">Home</a></li>
+    <li><a href="product.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    </ul>
+<!--- This part will be the Centered Brand name--->
+<!--- Lil Puto or Prod Isaiah?--->
+<p class="brand"> Prod Isaiah's <span class="font">Productions</span></h1>
+
+
+<img id="myImg" src="tree.jpg" alt="Trees" style="width:100%; max-width:300px;">
+
+<!--- the Modal--->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// get the modal
+var modal = document.getElementById('myModal');
+
+// get the image and insert it inside the modal - use its "alt" text as caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption")
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// when the user clicks on <span> (x), close the modal
+span.onclick = function(){
+  modal.style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
+<footer>
+  <p class="designer">Website made by <a href="https://www.instagram.com/xe.brandon/">Brandon Cooper</a>, <a href="https://www.instagram.com/prod.isaiah/">Isaiah Goycochea</a>, and <a href="#">Christian Malave</a>.</p>
+</footer>
